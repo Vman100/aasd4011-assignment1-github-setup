@@ -1,0 +1,17 @@
+name: aasd4011-assignment1-github-setup
+
+on: [push, pull_request]
+
+jobs:
+  grade-project:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Autograding Action
+      uses: uhafner/autograding-github-action@v3.19.0
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+          
