@@ -1,4 +1,4 @@
-name: aasd4011-assignment1-github-setup
+name: autograding
 
 on: [push, pull_request]
 
@@ -24,9 +24,4 @@ jobs:
     - name: Run tests
       run: |
         pytest
-        
-    - name: Autograding Action
-      uses: uhafner/autograding-github-action@v3.19.0
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
           
