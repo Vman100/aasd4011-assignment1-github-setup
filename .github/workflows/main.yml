@@ -1,0 +1,20 @@
+            - name: Autograding Action
+  # You may pin to the exact commit or the version.
+  # uses: uhafner/autograding-github-action@abe1c5b07ec7075fa54248490ee5ea4a274b1af8
+  uses: uhafner/autograding-github-action@v3.19.0
+  with:
+    # Autograding configuration (if not set the default configuration will be used)
+    config: # optional
+    # Name of the GitHub checks (if not set the default name will be used)
+    checks-name: # optional
+    # Pull request number (if not set, PR comments will be skipped)
+    pr-number: # optional
+    # GitHub authentication token (GITHUB_TOKEN)
+    github-token: 
+    # Skip the creation of annotations (for warnings and missed coverage) if not empty
+    skip-annotations: # optional
+    # Limit the number of warning annotations at specific lines. By default, all annotations are created.
+    max-warning-annotations: # optional
+    # Limit the number of coverage annotations at specific lines. By default, all annotations are created.
+    max-coverage-annotations: # optional
+          
