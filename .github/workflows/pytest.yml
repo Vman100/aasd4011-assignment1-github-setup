@@ -1,4 +1,4 @@
-name: autograding
+name: pytest
 
 on: [push, pull_request]
 
